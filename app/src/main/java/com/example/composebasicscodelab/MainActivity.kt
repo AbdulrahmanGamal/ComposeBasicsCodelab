@@ -10,13 +10,13 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.composebasicscodelab.ui.theme.CoposeBasicsCodelabTheme
+import com.example.composebasicscodelab.ui.theme.ComposeBasicsCodeLabTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            CoposeBasicsCodelabTheme {
+            ComposeBasicsCodeLabTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
@@ -37,7 +37,7 @@ fun Greeting(name: String) {
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
-    CoposeBasicsCodelabTheme {
+    ComposeBasicsCodeLabTheme {
         Greeting("Android")
     }
 }
